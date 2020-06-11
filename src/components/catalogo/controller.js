@@ -1,6 +1,17 @@
+const model = require("./model");
+
 module.exports = {
-  listaProductos: (req, res) => {
-    return res.send("Aqui veras una lista de productos");
+  listaProductos: async (req, res) => {
+    const response = await model.listaProductos();
+
+    const result = response.map((item) => {
+      return {
+        ...item,
+        Relacion: `${item.FactorCompra}/${item.FactorVenta}`,
+      };
+    });
+
+    return res.send({ data: result });
   },
   verProducto: (req, res) => {
     res.send(`Aqui veras informacion del producto ${req.params.id}`);
