@@ -1,0 +1,26 @@
+{
+  "name": "code-analitica",
+  "version": "1.0.0",
+  "description": "Proyecto para analitica de productos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sounix/code-analitica.git"
+  },
+  "author": "Aldrin Gonzalez Cancino <sounix@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sounix/code-analitica/issues"
+  },
+  "homepage": "https://github.com/sounix/code-analitica#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
